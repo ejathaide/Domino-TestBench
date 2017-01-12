@@ -84,6 +84,7 @@ public class Dashboard {
     private static void updatePutLong(){
     	//SmartDashboard.putBoolean("Compressor", Compressor.enabled());
     	//SmartDashboard.putNumber("Total Current Draw", HW.PDP.getTotalCurrent());
+	SmartDashboard.putBoolean("Battery Low:", HW.PDP.getVoltage() < 11.25);
     }
 
     
